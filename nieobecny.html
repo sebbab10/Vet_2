@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dyżur nieaktywny – co robić w nagłym wypadku</title>
+<meta name="robots" content="noindex">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%90%BE%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <a class="logo" href="./" aria-label="Strona główna"><span>dyżur weta.</span></a>
+    <a class="head-call" href="./">Wróć na stronę główną</a>
+  </div>
+</header>
+
+<main class="away">
+  <div class="notice-open" id="now-open" hidden>
+    <strong>Dyżur jest już aktywny.</strong>
+    <a class="btn" href="#" data-phone style="padding:14px 22px;font-size:17px"></a>
+  </div>
+
+  <p class="eyebrow">Dyżur nieaktywny</p>
+  <h1>Lekarz nie odbiera teraz telefonu.</h1>
+  <p class="lead" data-closed-info></p>
+  <p class="lead" id="next-line" hidden><strong>Następny dyżur: <span data-next></span>.</strong><br>Lekarz dyżurny: <span data-doctor></span></p>
+
+  <div class="urgent" role="alert">
+    <h2>Pilny przypadek? Nie czekaj.</h2>
+    <p style="margin:0">Jedź do najbliższej całodobowej kliniki, jeśli zwierzę:</p>
+    <ul>
+      <li>ma trudności z oddychaniem lub traci przytomność,</li>
+      <li>miało wypadek, mocno krwawi lub ma drgawki,</li>
+      <li>ma wzdęty, twardy brzuch albo próbuje wymiotować bez skutku,</li>
+      <li>zjadło truciznę lub lek.</li>
+    </ul>
+    <p style="margin:0 0 6px"><strong data-alt-name></strong></p>
+    <a class="btn" href="#" data-alt-phone></a>
+  </div>
+
+  <p><a href="./">Wróć na stronę główną</a></p>
+</main>
+
+<script src="config.js"></script>
+<script src="availability.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

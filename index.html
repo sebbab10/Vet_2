@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dyżur weterynaryjny – telefon do lekarza na dyżurze</title>
+<meta name="description" content="Dyżur weterynaryjny po godzinach pracy gabinetów. Sprawdź, czy lekarz jest teraz dostępny, i zadzwoń.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%90%BE%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="closed-bar" id="closed-bar" hidden>
+  <div class="wrap">
+    <strong>Poza godzinami dyżuru.</strong>
+    <span>Następny dyżur: <span data-next></span>.</span>
+    <a href="nieobecny.html">Pilny przypadek? Zobacz, co robić</a>
+  </div>
+</div>
+
+<header>
+  <div class="wrap">
+    <a class="logo" href="./" aria-label="Strona główna">
+      <svg viewBox="0 0 40 40" aria-hidden="true"><ellipse cx="20" cy="26" rx="9" ry="7.5" fill="#5b4bd6"/><circle cx="8" cy="17" r="4.2" fill="#3b82f6"/><circle cx="15" cy="10" r="4.2" fill="#3b82f6"/><circle cx="25" cy="10" r="4.2" fill="#3b82f6"/><circle cx="32" cy="17" r="4.2" fill="#3b82f6"/></svg>
+      <span>dyżur weta.</span>
+    </a>
+    <nav aria-label="Menu główne">
+      <a href="#dyzur" aria-current="page">Dyżur</a>
+      <a href="#poza-dyzurem">Poza dyżurem</a>
+      <a href="#kontakt">Kontakt</a>
+    </nav>
+    <a class="head-call" href="#kontakt" data-phone></a>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+    <section class="hero" id="dyzur">
+      <div>
+        <p class="eyebrow">Nocny dyżur weterynaryjny</p>
+        <h1>Weterynarz na telefon, gdy gabinety są zamknięte.</h1>
+        <p class="lead">Zadzwoń do lekarza dyżurnego. Pomoże ocenić, czy pupil może poczekać do rana, czy trzeba od razu jechać do kliniki.</p>
+
+        <div class="status" id="status-pill" role="status" aria-live="polite">
+          <span class="dot" aria-hidden="true"></span>
+          <div><b>Sprawdzam dyżur…</b><span id="status-sub"></span></div>
+        </div>
+
+        <p class="hours-title">Godziny dyżuru</p>
+        <ul class="hours" id="hours-list"></ul>
+
+        <a class="btn" id="hero-call" href="#kontakt">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          <span>Zadzwoń teraz</span>
+        </a>
+        <p class="doctor">Lekarz dyżurny: <strong data-doctor></strong></p>
+      </div>
+
+      <div class="art" aria-hidden="true">
+        <svg viewBox="0 0 460 440">
+          <defs>
+            <linearGradient id="gb" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#6aa6ff"/><stop offset="1" stop-color="#2f6fe0"/></linearGradient>
+            <linearGradient id="ge" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffc94d"/><stop offset="1" stop-color="#f0a313"/></linearGradient>
+            <radialGradient id="gh" cx=".4" cy=".3" r=".8"><stop offset="0" stop-color="#fff"/><stop offset="1" stop-color="#e4dcfb"/></radialGradient>
+          </defs>
+          <ellipse cx="210" cy="418" rx="150" ry="15" fill="#5b4bd6" opacity=".16"/>
+          <path class="tail" d="M300 372 C345 372 352 330 340 300" fill="none" stroke="#f5b72f" stroke-width="22" stroke-linecap="round"/>
+          <ellipse cx="210" cy="340" rx="98" ry="82" fill="url(#gb)"/>
+          <rect x="160" y="352" width="40" height="64" rx="20" fill="#fff" stroke="#dcd4f7" stroke-width="2"/>
+          <rect x="220" y="352" width="40" height="64" rx="20" fill="#fff" stroke="#dcd4f7" stroke-width="2"/>
+          <path d="M128 150C84 150 70 230 112 262c20 10 30-22 28-57z" fill="url(#ge)"/>
+          <path d="M292 150c44 0 58 80 16 112-20 10-30-22-28-57z" fill="url(#ge)"/>
+          <circle cx="210" cy="195" r="90" fill="url(#gh)"/>
+          <ellipse cx="150" cy="226" rx="14" ry="8" fill="#ff8fa3" opacity=".45"/>
+          <ellipse cx="270" cy="226" rx="14" ry="8" fill="#ff8fa3" opacity=".45"/>
+          <circle cx="178" cy="188" r="10" fill="#26214a"/><circle cx="181" cy="184" r="3" fill="#fff"/>
+          <circle cx="242" cy="188" r="10" fill="#26214a"/><circle cx="245" cy="184" r="3" fill="#fff"/>
+          <ellipse cx="210" cy="234" rx="44" ry="31" fill="#fff" stroke="#e3dcfa" stroke-width="2"/>
+          <path d="M196 215Q210 206 224 215Q222 227 210 229Q198 227 196 215Z" fill="#26214a"/>
+          <path d="M210 229V240M210 240Q196 254 184 244M210 240Q224 254 236 244" fill="none" stroke="#26214a" stroke-width="3.5" stroke-linecap="round"/>
+          <path d="M200 248Q210 278 220 248Z" fill="#ff8fa3"/>
+          <path d="M140 282Q210 306 280 282L284 300Q210 326 136 300Z" fill="#5b4bd6"/>
+          <circle cx="210" cy="322" r="14" fill="#f5b72f"/>
+          <rect x="208" y="315" width="4" height="14" rx="2" fill="#fff"/><rect x="203" y="320" width="14" height="4" rx="2" fill="#fff"/>
+
+          <g class="bob"><rect x="14" y="92" width="112" height="76" rx="26" fill="#2dd4bf"/><path d="M40 164 30 192 68 168Z" fill="#2dd4bf"/><circle cx="48" cy="130" r="7" fill="#fff"/><circle cx="70" cy="130" r="7" fill="#fff"/><circle cx="92" cy="130" r="7" fill="#fff"/></g>
+          <g class="bob2"><circle cx="396" cy="118" r="42" fill="#f5b72f"/><circle cx="396" cy="118" r="31" fill="#fff"/><path d="M396 98V120L411 130" fill="none" stroke="#1b1740" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></g>
+          <g class="bob3"><rect x="372" y="262" width="76" height="76" rx="24" fill="#5b4bd6"/><rect x="404" y="278" width="12" height="44" rx="5" fill="#fff"/><rect x="388" y="294" width="44" height="12" rx="5" fill="#fff"/></g>
+          <g class="bob2" fill="#3b82f6"><ellipse cx="60" cy="350" rx="17" ry="13"/><circle cx="42" cy="326" r="6"/><circle cx="54" cy="316" r="6"/><circle cx="68" cy="316" r="6"/><circle cx="80" cy="326" r="6"/></g>
+        </svg>
+      </div>
+    </section>
+
+    <section class="info" id="poza-dyzurem">
+      <div class="card">
+        <div>
+          <h2>Poza godzinami dyżuru</h2>
+          <p data-closed-info>Poza godzinami dyżuru lekarz nie odbiera telefonu.</p>
+          <p>Jeśli sytuacja jest pilna, zadzwoń do całodobowej placówki. Nie czekaj na kolejny dyżur.</p>
+        </div>
+        <div>
+          <p><strong data-alt-name></strong></p>
+          <a class="alt-phone" href="#" data-alt-phone></a>
+          <p style="margin-top:12px"><a href="nieobecny.html">Zobacz, co robić w nagłym wypadku</a></p>
+        </div>
+      </div>
+    </section>
+  </div>
+</main>
+
+<footer id="kontakt">
+  <div class="wrap">
+    <span><strong data-doctor></strong> · dyżur telefoniczny</span>
+    <a href="#" data-phone></a>
+  </div>
+</footer>
+
+<script src="config.js"></script>
+<script src="availability.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
