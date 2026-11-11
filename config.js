@@ -3,7 +3,7 @@ window.DYZUR = {
   clinic: "Nocny dyżur weterynaryjny w Suwałkach",
   doctor: "lek. wet. ",          // <- imię i nazwisko lekarza
   phone: "+48662350261",                      // <- numer do połączenia (bez spacji)
-  phoneLabel: "+48 123 456 789",              // <- jak numer wygląda na stronie
+  phoneLabel: "+48 000 456 789",              // <- jak numer wygląda na stronie
   timeZone: "Europe/Warsaw",
 
   // Godziny dyżuru. Klucz: 0 = niedziela ... 6 = sobota. [od, do]
