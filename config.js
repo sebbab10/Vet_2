@@ -1,9 +1,9 @@
 // ====== EDYTUJ TEN PLIK / EDIT THIS FILE ======
 window.DYZUR = {
   clinic: "Nocny dyżur weterynaryjny w Suwałkach",
-  doctor: "lek. wet. ",          // <- imię i nazwisko lekarza
-  phone: "+48662350261",                      // <- numer do połączenia (bez spacji)
-  phoneLabel: "+48 000 456 789",              // <- jak numer wygląda na stronie
+  doctor: " ",          // <- imię i nazwisko lekarza
+  phone: "+48000000000",                      // <- numer do połączenia (bez spacji)
+  phoneLabel: "+48 xxx xxx xxx",              // <- jak numer wygląda na stronie
   timeZone: "Europe/Warsaw",
 
   // Godziny dyżuru. Klucz: 0 = niedziela ... 6 = sobota. [od, do]
@@ -11,7 +11,7 @@ window.DYZUR = {
   schedule: {
     1: ["21:00", "06:00"],
     2: ["21:00", "06:00"],
-    3: ["18:00", "06:00"],
+    3: ["21:00", "06:00"],
     4: ["21:00", "06:00"],
     5: ["21:00", "06:00"],
     6: ["21:00", "06:00"],
@@ -23,9 +23,9 @@ window.DYZUR = {
   ],
 
   // Gdy poza dyżurem: dane kliniki całodobowej (lub inne wskazówki)
-  altName: "Całodobowa klinika weterynaryjna",   // <- zmień
-  altPhone: "+48222222222",                      // <- zmień
-  altPhoneLabel: "+48 222 222 222",              // <- zmień
+  altName: " ",   // <- Całodobowa klinika weterynaryjna
+  altPhone: " ",                      // <- +48222222222
+  altPhoneLabel: " ",              // <- +48222222222
   unavailableInfo: "Poza godzinami dyżuru lekarz nie odbiera telefonu.",
 
   // Ręczne wyłączenie (urlop, choroba). Ustaw active: true i zrób commit.
