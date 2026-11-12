@@ -26,7 +26,7 @@ window.DYZUR = {
   altName: " ",   // <- Całodobowa klinika weterynaryjna
   altPhone: " ",                      // <- +48222222222
   altPhoneLabel: " ",              // <- +48222222222
-  unavailableInfo: "Poza godzinami dyżuru lekarz nie odbiera telefonu.",
+  unavailableInfo: "Poza godzinami dyżuru lekarz nie odbiera telefonu. P",
 
   // Ręczne wyłączenie (urlop, choroba). Ustaw active: true i zrób commit.
   override: {
