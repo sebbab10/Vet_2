@@ -30,9 +30,9 @@ window.DYZUR = {
 
   // Ręczne wyłączenie (urlop, choroba). Ustaw active: true i zrób commit.
   override: {
-    active: true,
+    active: false,
     message: "Dyżur jest chwilowo wyłączony.",
-    until: "14 listopada"            // np. "20 listopada" (pokaże: Następny dyżur: 20 listopada)
+    until: ""            // np. "20 listopada" (pokaże: Następny dyżur: 20 listopada)
   },
   // Czy strona główna ma przekierowywać na nieobecny.html poza dyżurem?
   redirectWhenClosed: false
