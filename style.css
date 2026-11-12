@@ -91,4 +91,7 @@ footer a{font-weight:600;text-decoration:none;color:var(--ink)}
   h1{max-width:none}
   .card{grid-template-columns:1fr;padding:24px}
   .btn{width:100%}
+
+#o-nas .card{grid-template-columns:1fr}
+#o-nas .lead{max-width:none}
 }
