@@ -18,8 +18,7 @@ window.DYZUR = {
     0: ["21:00", "06:00"]
   },
   hoursText: [
-    ["Poniedziałek – piątek", "21:00 – 6:00"],
-    ["Sobota i niedziela", "21:00 - 6:00"]
+    ["Codziennie", "21:00 – 6:00"]
   ],
 
   // Gdy poza dyżurem: dane kliniki całodobowej (lub inne wskazówki)
