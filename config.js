@@ -32,7 +32,7 @@ window.DYZUR = {
   override: {
     active: false,
     message: "Dyżur jest chwilowo wyłączony.",
-    until: ""            // np. "20 listopada" (pokaże: Następny dyżur: 20 listopada)
+    until: " "            // np. "20 listopada" (pokaże: Następny dyżur: 20 listopada)
   },
   // Czy strona główna ma przekierowywać na nieobecny.html poza dyżurem?
   redirectWhenClosed: false
