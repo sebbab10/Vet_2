@@ -26,7 +26,7 @@
   const call = $("hero-call");
   if (call) {
     if (S.open) { call.href = "tel:" + C.phone; call.querySelector("span").textContent = "Zadzwoń teraz"; }
-    else { call.href = "nieobecny.html"; call.querySelector("span").textContent = "Co robić poza dyżurem"; call.classList.add("btn-muted"); }
+    else { call.href = "nieobecny.html"; call.querySelector("span").textContent = "Dyżur nieaktywny"; call.classList.add("btn-muted"); }
   }
   const nl = $("next-line"); if (nl) nl.hidden = !S.nextText;
   const now = $("now-open"); if (now) now.hidden = !S.open;
