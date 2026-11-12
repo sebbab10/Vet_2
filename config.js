@@ -30,7 +30,7 @@ window.DYZUR = {
 
   // Ręczne wyłączenie (urlop, choroba). Ustaw active: true i zrób commit.
   override: {
-    active: true,
+    active: false,
     message: "Niestety, żaden z lekarzy nie mógł objąć dzisiaj dyżuru.",
     until: "12 listopada"            // np. "20 listopada" (pokaże: Następny dyżur: 20 listopada)
   },
