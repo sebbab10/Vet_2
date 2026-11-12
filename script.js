@@ -21,7 +21,7 @@
   const pill = $("status-pill");
   if (pill) {
     pill.querySelector("b").textContent = S.open ? "Dyżur aktywny teraz" : "Poza godzinami dyżuru";
-    $("status-sub").textContent = S.open ? "Lekarz odbiera telefon." : (S.nextText ? "Następny dyżur: " + S.nextText + "." : "");
+    $("status-sub").textContent = S.open ? "Lekarz odbiera telefon." : (S.nextText ? "Następny dyżur: " + S.nextText : "");
   }
   const call = $("hero-call");
   if (call) {
